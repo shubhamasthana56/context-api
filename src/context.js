@@ -10,7 +10,7 @@ function DarkThemeProvider(props) {
   }
   return (
       <>
-        <DarkThemeContext.Provider value={{theme, toggleTheme}}>
+        <DarkThemeContext.Provider value={{theme, toggleTheme, abc: "test"}}>
             {props.children}
         </DarkThemeContext.Provider>
       </>

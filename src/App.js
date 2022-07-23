@@ -1,11 +1,13 @@
 import { useContext } from "react";
-import { DarkThemeContext } from "./context";
+import { DarkThemeContext, AuthenticationContext } from "./context";
+import "./css/App.css";
 const App = ()=> {
   const themeData = useContext(DarkThemeContext);
-  console.log(themeData)
+  const {isLogin, userAuthetication} = useContext(AuthenticationContext);
+  const abc = "a"
   return (
     <>
-      <div>Shubham</div>
+      <button onClick={userAuthetication} id="login-button" className="button" style={{backgroundColor: "black"}}>{isLogin ? "Logout": "Login"}</button>
     </>
   )
 }

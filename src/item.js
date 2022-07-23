@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { AuthenticationContext } from "./context";
 const Item = ()=> {
-    const login = useContext(AuthenticationContext)
-    console.log(login)
+    const {isLogin} = useContext(AuthenticationContext)
+    console.log(isLogin);
     return (<>
-        Item Works
+       <div>{isLogin ? "All Items": "Please Login"}</div>
     </>)
 }
 export default Item;
