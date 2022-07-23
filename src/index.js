@@ -9,13 +9,14 @@ import Item from './item';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-   <AuthenticationProvider>
+  <App/>
+   {/* <AuthenticationProvider>
      <Item/>
      <DarkThemeProvider>
      <App/>
      </DarkThemeProvider>
      
-   </AuthenticationProvider>
+   </AuthenticationProvider> */}
   </>
   
 );
